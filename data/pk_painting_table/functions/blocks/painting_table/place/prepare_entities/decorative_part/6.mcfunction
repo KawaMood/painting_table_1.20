@@ -15,4 +15,4 @@ tag @s add pk.pa_ta.painting_table.decorative
 tag @s add pk.part_6
 
 # Set data 
-data merge entity @s {item:{id:"minecraft:player_head",Count:1b,tag:{SkullOwner:{Id:[I;16,11,1,0],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjY2MzY3MjI2MmUxN2UyMjU2NGFiNmI1YmRjOGJkZDM2Y2RhMDA1MGUwOTZkMWVmZmFkM2UxZGI3OGUyNmEzNiJ9fX0="}]}}}},transformation:{translation:[0.7505f,0.0005f,0.2495f],scale:[1.002f,1.002f,1.002f]}}
+data merge entity @s {item:{id:"minecraft:player_head",Count:1b,tag:{SkullOwner:{Id:[I;16,11,1,0],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjY2MzY3MjI2MmUxN2UyMjU2NGFiNmI1YmRjOGJkZDM2Y2RhMDA1MGUwOTZkMWVmZmFkM2UxZGI3OGUyNmEzNiJ9fX0="}]}}}},transformation:{translation:[0.7505f,0.0005f,0.2495f],scale:[1.002f,1.002f,1.002f],right_rotation:[0f,1f,0f,0f]}}

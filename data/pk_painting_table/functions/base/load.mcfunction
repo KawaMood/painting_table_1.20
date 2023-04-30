@@ -62,11 +62,13 @@ scoreboard objectives add pk.pa_ta.has_output_items_prev dummy
 function pk_painting_table:packages/dimension_marker/load
 # RNG
 function pk_painting_table:packages/random/load
+# Air toggling
+function pk_painting_table:packages/air_toggling/load
 
 # ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― 
 # Updates:
 # ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
-execute unless score $pk.pa_ta.version pk.value matches 4 run function pk_painting_table:base/update/start
+execute unless score $pk.pa_ta.version pk.value matches 5 run function pk_painting_table:base/update/start
 
 # ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― 
 # Logs:
