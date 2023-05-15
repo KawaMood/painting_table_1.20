@@ -16,7 +16,8 @@
 # ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― 
 # Locations:
 # ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
-# Location -30000000 0 1611 | Used in any custom dimension by the dimension_marker helper (need to stay forceloaded)
+# Location -30000000 0 1611 in Overworld | Standardized chunk used by many data packs, used here to run command blocks processes
+execute in minecraft:overworld run forceload add -30000000 -1600
 
 # ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― 
 # Storage:
@@ -58,8 +59,8 @@ scoreboard objectives add pk.pa_ta.has_output_items_prev dummy
 # ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― 
 # Helpers:
 # ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
-# Dimension marker
-function pk_painting_table:packages/dimension_marker/load
+# Player id
+function pk_painting_table:packages/player_id/load
 # RNG
 function pk_painting_table:packages/random/load
 # Air toggling

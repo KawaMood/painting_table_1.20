@@ -1,10 +1,9 @@
-#> pk_painting_table:base/uninstall/remove_common_features
-# Remove all features common to each PK Datapacks
+#> pk_painting_table:base/uninstall/helpers/remove_common_features
+# Remove all features common to each KawaMood data packs
 # /!\ Do not run this function manually!
 
 # Uninstall packages
-function pk_painting_table:packages/air_toggling/uninstall
-function pk_painting_table:packages/dimension_marker/uninstall
+function pk_painting_table:packages/player_id/uninstall
 
 # Remove pk.common.data storage data
 data remove storage pk.common:data Datapacks

@@ -3,9 +3,14 @@
         "requirement": {
             "trigger": "minecraft:placed_block",
             "conditions": {
-                "item": {
-                    "nbt": "{pkCustomBlockPlacer:1b,pkPaintingTable:1b}"
-                }
+                "location": [
+                    {
+                        "condition": "minecraft:match_tool",
+                        "predicate": {
+                            "nbt": "{pkCustomBlockPlacer:1b,pkPaintingTable:1b}"
+                        }
+                    }
+                ]
             }
         }
     },
