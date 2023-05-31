@@ -1,5 +1,5 @@
 #> pk_painting_table:blocks/painting_table/place/blocks_list/store
-# Store the Painting Table info from the controller
+# @context as the placer (placing player) at the placed block
 
 data remove storage pk.common:data Temp.PaintingTable
 
@@ -12,14 +12,14 @@ data modify storage pk.common:data Temp.PaintingTable.z set from storage pk.comm
 execute store result storage pk.common:data Temp.PaintingTable.Version int 1 run scoreboard players get $pk.pa_ta.version pk.value
 
 # Set component id score
-execute store result storage pk.common:data Temp.PaintingTable.id int 1 run scoreboard players get @s pk.custom_block.component.id
+execute store result storage pk.common:data Temp.PaintingTable.id int 1 run scoreboard players get $next pk.custom_block.component.id
 
 # Set placer
-execute store result storage pk.common:data Temp.PaintingTable.Placer.id int 1 run scoreboard players get @a[tag=pk.temp.current,distance=..10,limit=1] pk.player.id
-data modify storage pk.common:data Temp.PaintingTable.Placer.UUID set from entity @a[tag=pk.temp.current,distance=..10,limit=1] UUID
+execute store result storage pk.common:data Temp.PaintingTable.Placer.id int 1 run scoreboard players get @s pk.player.id
+data modify storage pk.common:data Temp.PaintingTable.Placer.UUID set from entity @s UUID
 
 # Set dimension
-data modify storage pk.common:data Temp.PaintingTable.Dimension set from entity @a[tag=pk.temp.current,distance=..10,limit=1] Dimension
+data modify storage pk.common:data Temp.PaintingTable.Dimension set from entity @s Dimension
 
 # Store current block's info into the list
 data modify storage pk.pa_ta:data Blocks.PaintingTables append from storage pk.common:data Temp.PaintingTable

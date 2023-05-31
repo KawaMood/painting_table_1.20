@@ -6,6 +6,9 @@ scoreboard players add $next pk.custom_block.component.id 1
 # Set block
 setblock ~ ~ ~ barrel[facing=down]{CustomName:'{"italic":false,"text":"Painting Table"}',Items:[{id:"minecraft:light_gray_stained_glass_pane",Count:1b,tag:{pkCustomBlock:1b,pkGUI:1b,pkPaintingTable:1b,pkInUse:0b},Slot:0b}]}
 
+# Store Painting Block info
+function pk_painting_table:blocks/painting_table/place/blocks_list/store
+
 # Set controller
 execute summon marker run function pk_painting_table:blocks/painting_table/place/prepare_entities/controller_initialize
 

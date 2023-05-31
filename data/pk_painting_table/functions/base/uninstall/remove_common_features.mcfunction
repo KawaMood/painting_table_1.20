@@ -1,4 +1,4 @@
-#> pk_painting_table:base/uninstall/helpers/remove_common_features
+#> pk_painting_table:base/uninstall/remove_common_features
 # Remove all features common to each KawaMood data packs
 # /!\ Do not run this function manually!
 
