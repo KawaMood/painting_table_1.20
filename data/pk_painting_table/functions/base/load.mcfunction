@@ -69,7 +69,7 @@ function pk_painting_table:packages/air_toggling/load
 # ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― 
 # Updates:
 # ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
-execute unless score $pk.pa_ta.version pk.value matches 5 run function pk_painting_table:base/update/start
+execute unless score $pk.pa_ta.version pk.value matches 6 run function pk_painting_table:base/update/start
 
 # ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― 
 # Logs:

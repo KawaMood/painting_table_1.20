@@ -11,8 +11,6 @@ data modify storage pk.common:data Temp.GUI.Items set value []
 # Reset scores
 scoreboard players set $block_has_correct_input_items pk.temp 0
 scoreboard players set $block_has_output_items pk.temp 0
-scoreboard players set $player_has_output_items_prev pk.temp 0
-scoreboard players set $player_has_output_items pk.temp 0
 scoreboard players set $player_has_gui_items pk.temp 0
 scoreboard players set $skip_check pk.temp 0
 

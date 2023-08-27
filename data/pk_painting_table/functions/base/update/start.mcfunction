@@ -10,5 +10,5 @@ execute if score $pk.pa_ta.version pk.value matches ..4 run function pk_painting
 execute if score $pk.pa_ta.version pk.value matches ..5 run function pk_painting_table:base/update/revisions/6/start
 
 # Set the data pack current version score
-scoreboard players set $pk.pa_ta.version pk.value 6
-data modify storage pk.common:data Datapacks[{Name:"Painting Table"}].Version set value "2.1.0"
+scoreboard players set $pk.pa_ta.version pk.value 7
+data modify storage pk.common:data Datapacks[{Name:"Painting Table"}].Version set value "2.1.1"

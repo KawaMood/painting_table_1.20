@@ -3,6 +3,11 @@
 # Revoke advancement
 advancement revoke @s only pk_painting_table:interactions/get_output_items_in_inventory
 
+# Update scores and add tag for Painting Table content check process
+tag @s add pk.pa_ta.has_output_items_advancement
+execute store result score $player_has_output_items pk.temp run clear @s player_head{pkOutput:1b} 0
+scoreboard players operation @s pk.pa_ta.has_output_items = $player_has_output_items pk.temp
+
 # Completly remove the pkOutput data from the output items stack
 summon armor_stand ~ ~ ~ {Marker:1b,Tags:["pk.holder"],HandItems:[{},{}]}
 data modify entity @e[type=armor_stand,tag=pk.holder,distance=..0.1,limit=1] HandItems[0] set from entity @s Inventory[{tag:{pkOutput:1b}}]
